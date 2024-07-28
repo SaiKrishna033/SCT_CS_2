@@ -7,7 +7,7 @@ def encrypt_image(image_path, key):
         pixels = list(image.getdata())
 
         # Encrypt the pixels by adding the key value (modulo 256 for wrapping)
-        encrypted_pixels = [(pixel[0] + key) % 256, (pixel[1] + key) % 256, (pixel[2] + key) % 256] for pixel in pixels
+        encrypted_pixels = [( (pixel[0] + key) % 256, (pixel[1] + key) % 256, (pixel[2] + key) % 256 ) for pixel in pixels]
 
         # Create a new image with the encrypted pixels
         encrypted_image = Image.new(image.mode, image.size)

@@ -19,7 +19,7 @@ This project is a simple image encryption tool that uses pixel manipulation to e
 1. **Clone the repository:**
 
     ```sh
-    git clone https://github.com/SaiKrishna033/SCT_CS_2.git
+    git clone https://github.com/SaiKrishna033/image_encryption_tool.git
     cd image-encryption-tool
     ```
 
